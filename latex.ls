@@ -13,6 +13,7 @@ convert = (input, output-gif, output-latex) ->
 	(succf, errf) <- new-promise
 
 	input := input.replace /\\(h|v)space\{(\d+)\}/gi, '\\$1space{$2pt}' #(input.split "\\vspace{5} ").join ""
+	input := input.replace /(\&nbsp\;|\<br\>)/gi, ' '
 	temp-file-name = md5 input
 	template = main-template.replace "{FORMULA}", "& " + ((input.split "\\\\" ).join "\\\\\n& ").trim!
 	template = template.replace "{RAW}", input
