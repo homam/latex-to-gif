@@ -1,0 +1,30 @@
+{
+  "name": "latex",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.8.1",
+    "express": "^4.9.0",
+    "async-ls": "^0.0.3",
+    "MD5": "^1.2.1",
+    "execSync": "^1.0.2",
+    "minimist": "^1.1.0",
+    "prelude-ls": "^1.1.1",
+    "ejs": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/homam/latex-to-gif.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/homam/latex-to-gif/issues"
+  },
+  "homepage": "https://github.com/homam/latex-to-gif"
+}
